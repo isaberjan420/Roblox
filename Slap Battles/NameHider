@@ -1,0 +1,14 @@
+local Players = game:GetService("Players")
+local Text = "" --Place Any Name Tag You Want Here, "" Makes The Name Tag Invisible
+
+local function Process()
+    Players.LocalPlayer.Character.Head.Nametag.TextLabel.Text = Text
+end
+
+local function Loop()
+    while task.wait(0.015) do
+        pcall(Process)
+    end
+end
+
+coroutine.resume(coroutine.create(Loop))
