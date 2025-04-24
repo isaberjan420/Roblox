@@ -24,6 +24,13 @@ local function Bomb()
     game:GetService("Debris"):AddItem(RemoteE, 1)
     game:GetService("Debris"):AddItem(RemoteF, 1)
 end
+task.spawn(function()
+    for i, v in ipairs(game:GetDescendants()) do
+        if v:IsA("RemoteEvent") or v:IsA("RemoteFunction") then
+            table.insert(Names, v.Name)
+        end
+    end
+end)
 local function Loop()
     while task.wait(Delay) do
         pcall(Bomb)
