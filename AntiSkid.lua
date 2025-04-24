@@ -1,4 +1,4 @@
-local Delay = 0.5
+local Delay = 1
 local Names = {"RemoteEvent", "SetPace", "\75,:+>*pa<HN?ri", "3[A?E!r2qW:U_v%G", "8!)$7bL.kdmEDay>", "$qjy8G!A*iZ@t8wU"}
 local Args = {"K_b4?!*':oHb9Pc:", "dmF<?57N<$us>2", "koX6D)DA5,Z_^/t", "1000000", "Bypass", "Disable", "Enable", true, false, 1, 0}
 local Parents = {workspace, game:GetService("ReplicatedStorage"), game:GetService("ReplicatedFirst")}
